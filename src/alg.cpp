@@ -27,7 +27,6 @@ for (int k = (value + 1);checkPrime(k) == 0;k++)
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-	// вставьте код функции
 	int sum = 0;
 	for (int i = 2;i < hbound;i++)
 		if (checkPrime(i))

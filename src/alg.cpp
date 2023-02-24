@@ -4,7 +4,7 @@
 
 
 bool checkPrime(uint64_t value) {
-	for (int k = 2; k < sqrt(value); k++)
+	for (int k = 2; k*k<value; k++)
 		if (value % k == 0)
 			return false;
 	return true;

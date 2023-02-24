@@ -22,8 +22,10 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-	for (int k = (value + 1);checkPrime(k) == 0;k++)
-		return --k;
+	int k = (value + 1);
+	while (checkPrime(k) == 0)
+		k++;
+	return --k;
 }
 
 uint64_t sumPrime(uint64_t hbound) {

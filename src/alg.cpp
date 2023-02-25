@@ -22,9 +22,9 @@ uint64_t nextPrime(uint64_t value) {
 	bool w = true;
 	value++;
 	while (w) {
-		value++;
 		if (checkPrime(value))
 			w = false;
+		value++;
 	}
 	return (value - 1);
 }

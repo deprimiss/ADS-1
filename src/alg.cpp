@@ -19,10 +19,10 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
-	uint64_t k = (value + 1);
-	while (checkPrime(k) == 0)
-		k++;
-	return (k - 1);
+	value++;
+	while (checkPrime(value) == 0)
+		value++;
+	return (value - 1);
 }
 
 uint64_t sumPrime(uint64_t hbound) {

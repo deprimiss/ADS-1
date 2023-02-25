@@ -20,7 +20,7 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 	value++;
-	while (checkPrime(value) == 0)
+	while (checkPrime(value) == false)
 		value++;
 	return (value - 1);
 }
